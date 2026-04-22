@@ -6,4 +6,4 @@ Lost too many points on participation through my college, so I decided to just m
 Hopefully this helps you too.
 
 
-## Made with WXT + Vue + Typescript
+### Made with WXT + Vue + Typescript
