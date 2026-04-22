@@ -1,0 +1,41 @@
+:root {
+  font-family: 'Avenir Next', 'Segoe UI', 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #f4f8ff;
+  background:
+    radial-gradient(circle at top left, rgba(109, 179, 255, 0.2), transparent 34%),
+    linear-gradient(180deg, #0f1e35, #08111f 74%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 360px;
+  min-height: 100vh;
+}
+
+button,
+input,
+label {
+  font: inherit;
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid rgba(133, 192, 255, 0.92);
+  outline-offset: 2px;
+}
+
+#root {
+  min-height: 100vh;
+  padding: 14px;
+}

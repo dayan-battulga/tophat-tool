@@ -1,0 +1,271 @@
+.popup-shell {
+  display: grid;
+  gap: 12px;
+}
+
+.panel {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03)),
+    rgba(12, 21, 38, 0.78);
+  box-shadow: 0 18px 40px rgba(3, 10, 26, 0.28);
+  border-radius: 18px;
+  padding: 16px;
+  backdrop-filter: blur(16px);
+}
+
+.hero-panel {
+  background:
+    radial-gradient(circle at top right, rgba(118, 182, 255, 0.26), transparent 36%),
+    linear-gradient(145deg, rgba(15, 32, 58, 0.96), rgba(8, 18, 34, 0.94));
+}
+
+.loading-panel {
+  min-height: 180px;
+  display: grid;
+  align-content: center;
+}
+
+.eyebrow,
+.section-label {
+  margin: 0 0 6px;
+  font-size: 0.73rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(176, 210, 255, 0.76);
+}
+
+.hero-row,
+.section-heading,
+.sound-copy__row,
+.sound-actions,
+.slider-wrap,
+.pill-row {
+  display: flex;
+  align-items: center;
+}
+
+.hero-row,
+.section-heading,
+.sound-copy__row {
+  justify-content: space-between;
+}
+
+.hero-row {
+  gap: 14px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.45rem;
+  line-height: 1.1;
+  color: #f3f8ff;
+}
+
+h2 {
+  font-size: 1rem;
+  color: #f3f8ff;
+}
+
+h3 {
+  font-size: 0.96rem;
+  color: #f3f8ff;
+}
+
+.muted-copy,
+.sound-copy p,
+.add-card p,
+.hint-copy {
+  color: rgba(215, 228, 248, 0.74);
+  line-height: 1.45;
+}
+
+.muted-copy {
+  margin-top: 8px;
+}
+
+.library-counter {
+  min-width: 72px;
+  padding: 10px 12px;
+  border-radius: 16px;
+  background: rgba(132, 191, 255, 0.14);
+  border: 1px solid rgba(132, 191, 255, 0.2);
+  text-align: center;
+  color: #f5fbff;
+}
+
+.library-counter span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: block;
+}
+
+.library-counter small {
+  color: rgba(215, 228, 248, 0.74);
+}
+
+.slider-wrap {
+  gap: 10px;
+  margin-top: 12px;
+  color: rgba(215, 228, 248, 0.74);
+}
+
+.slider-wrap input {
+  flex: 1;
+  accent-color: #85c0ff;
+}
+
+.sound-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.sound-card {
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(6, 15, 28, 0.58);
+  padding: 12px;
+  display: grid;
+  gap: 12px;
+}
+
+.sound-card--active {
+  border-color: rgba(133, 192, 255, 0.5);
+  box-shadow: inset 0 0 0 1px rgba(133, 192, 255, 0.24);
+}
+
+.sound-main {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.sound-main input {
+  margin-top: 4px;
+  accent-color: #85c0ff;
+}
+
+.sound-copy {
+  display: grid;
+  gap: 6px;
+  width: 100%;
+}
+
+.sound-badge {
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #c8e3ff;
+  background: rgba(133, 192, 255, 0.12);
+  border: 1px solid rgba(133, 192, 255, 0.22);
+  border-radius: 999px;
+  padding: 4px 8px;
+}
+
+.sound-actions {
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.secondary-button,
+.ghost-button,
+.pill-button,
+.upload-button {
+  border: 0;
+  border-radius: 999px;
+  font-size: 0.83rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    transform 160ms ease,
+    opacity 160ms ease,
+    background-color 160ms ease,
+    border-color 160ms ease;
+}
+
+.secondary-button,
+.pill-button,
+.upload-button {
+  padding: 10px 14px;
+  background: linear-gradient(135deg, #8ac7ff, #5c95ff);
+  color: #071425;
+}
+
+.ghost-button {
+  padding: 10px 12px;
+  background: transparent;
+  color: #d9e8fb;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.secondary-button:hover,
+.ghost-button:hover,
+.pill-button:hover,
+.upload-button:hover {
+  transform: translateY(-1px);
+}
+
+.secondary-button:disabled,
+.ghost-button:disabled,
+.pill-button:disabled,
+.upload-button.is-disabled,
+.upload-button input:disabled + span {
+  cursor: not-allowed;
+  opacity: 0.5;
+  transform: none;
+}
+
+.add-sound-grid {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.add-card {
+  border-radius: 16px;
+  padding: 14px;
+  background: rgba(7, 17, 31, 0.58);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: grid;
+  gap: 10px;
+}
+
+.pill-row {
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.upload-button {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload-button input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.message-panel {
+  display: grid;
+  gap: 6px;
+}
+
+.status-message {
+  color: #bdf4c5;
+}
+
+.error-message {
+  color: #ffd0d0;
+}
