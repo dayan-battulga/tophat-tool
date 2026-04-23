@@ -26,4 +26,4 @@ web-ext.config.ts
 *.sw?
 
 # docs
-/docs/
+/docs
