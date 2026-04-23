@@ -125,20 +125,6 @@ Expected behavior:
 - At least `1` sound must always remain in the library
 - Uploaded MP3s are stored locally in extension storage
 
-## Popup Features
-
-The popup lets you:
-
-- change the master volume
-- choose the active alert sound
-- upload a custom MP3
-- preview the selected sound
-- enable or disable automatic alerts
-- restore removed built-in sounds
-- switch between light and dark mode
-
-The popup is only for configuration. The alert system still works when the popup is closed.
-
 ## Detection Notes
 
 The content script does not blindly alert on every DOM change. It keeps track of the currently visible question key and only alerts when:
@@ -158,13 +144,6 @@ This extension currently uses:
   Creates an offscreen document for audio playback.
 - `https://app.tophat.com/e/*`
   Allows the content script to run on Top Hat classroom pages.
-
-## Privacy
-
-- Settings are stored locally in the extension
-- Custom MP3 uploads are stored locally in Chrome extension storage
-- The extension does not send your settings or audio files to an external server
-
 ## Project Structure
 
 ```text
@@ -202,4 +181,5 @@ If the popup looks out of date:
 
 ## Disclaimer
 
-This project is not affiliated with Top Hat.
+This project is not affiliated with Top Hat and does not condone cheating or missing classes.
+Logo from: Arkinasi - Flaticon
